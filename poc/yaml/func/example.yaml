@@ -1,0 +1,17 @@
+t:
+- key: <<auto_add "a" 1>>
+- key: <<auto_add "b" 3>>
+- key: <<auto_add "a" 1>>
+
+# more examples
+m:
+  c:
+    - key: <<auto_add "a" 1>>
+    - m:
+        d:
+          - key: <<auto_add "a" 1>>
+          - key: <<auto_add "b" 3>>
+        v:
+          - key: <<auto_add "a" 1>>
+          - key: <<auto_add "c" -1>>
+    - e: <<auto_add "c" 1>>

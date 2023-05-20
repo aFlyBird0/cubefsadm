@@ -1,0 +1,21 @@
+mds_services:
+    config: {}
+    deploy:
+        - config:
+            leader.electionTimeoutMs: 2
+          host: server-host1
+        - config:
+            leader.electionTimeoutMs: 3
+          host: server-host2
+        - config:
+            leader.electionTimeoutMs: 3
+          host: server-host3
+meta_node_services:
+    config: {}
+    deploy:
+        - config:
+            listen.ip: 8080
+          host: server-host1
+        - config:
+            listen.ip: 8081
+          host: server-host2

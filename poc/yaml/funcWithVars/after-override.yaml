@@ -1,0 +1,9 @@
+meta_node_services:
+  config: {}
+  deploy:
+    - host: server-host1
+      config:
+        listen.ip: <<auto_add "port_a" .init_port>>
+    - host: server-host2
+      config:
+        listen.ip: <<auto_add "port_a" .init_port>>

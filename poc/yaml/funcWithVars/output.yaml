@@ -1,0 +1,9 @@
+meta_node_services:
+    config: {}
+    deploy:
+        - config:
+            listen.ip: 8080
+          host: server-host1
+        - config:
+            listen.ip: 8081
+          host: server-host2
